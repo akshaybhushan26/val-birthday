@@ -108,11 +108,11 @@ export default function Home() {
   // PASSWORD SCREEN
   if (!unlocked) {
     return (
-      <main className="min-h-screen bg-gradient-to-br from-pink-200 via-rose-200 to-purple-200 flex items-center justify-center sm:px-4 py-0 sm:py-16 relative overflow-hidden">
+      <main className="min-h-screen bg-gradient-to-br from-pink-200 via-rose-200 to-purple-200 flex items-center justify-center px-4 sm:px-6 py-8 sm:py-16 relative overflow-hidden">
         <FloatingHearts />
 
         <div
-          className={`w-full sm:max-w-md bg-white/70 backdrop-blur-xl sm:rounded-3xl shadow-2xl border-0 sm:border border-white/40 p-8 sm:p-10 min-h-screen sm:min-h-0 flex flex-col justify-center relative text-center transition ${
+          className={`w-full max-w-md bg-white/70 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/40 p-6 sm:p-10 relative text-center transition ${
             wrong ? "animate-shake" : ""
           }`}
         >
@@ -183,14 +183,14 @@ export default function Home() {
 
   // MAIN PAGE
   return (
-    <main className="min-h-screen bg-gradient-to-br from-pink-200 via-rose-200 to-purple-200 flex items-center justify-center sm:px-4 py-0 sm:py-16 relative overflow-hidden">
+    <main className="min-h-screen bg-gradient-to-br from-pink-200 via-rose-200 to-purple-200 flex items-center justify-center px-4 sm:px-6 py-8 sm:py-16 relative overflow-hidden">
       <FloatingHearts />
 
       {showConfetti && <Confetti />}
 
-      <div className="w-full sm:max-w-3xl bg-white/70 backdrop-blur-xl sm:rounded-3xl shadow-2xl border-0 sm:border border-white/40 p-6 sm:p-12 min-h-screen sm:min-h-0 relative">
+      <div className="w-full max-w-3xl bg-white/70 backdrop-blur-xl rounded-2xl sm:rounded-3xl shadow-2xl border border-white/40 p-6 sm:p-10 lg:p-12 relative">
         {/* Banner */}
-        <div className="hidden sm:block absolute -top-8 sm:-top-9 left-1/2 -translate-x-1/2 px-12 sm:px-16 py-3 sm:py-4 rounded-full bg-white/70 border border-white/60 shadow-lg">
+        <div className="absolute -top-4 sm:-top-8 sm:-top-9 left-1/2 -translate-x-1/2 px-12 sm:px-16 py-3 sm:py-4 rounded-full bg-white/70 border border-white/60 shadow-lg">
           <p className="text-base sm:text-lg font-bold text-gray-800 tracking-wide whitespace-nowrap">
             🎉 VALEN’S BIRTHDAY ZONE 🎉
           </p>
