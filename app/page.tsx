@@ -108,7 +108,7 @@ export default function Home() {
   // PASSWORD SCREEN
   if (!unlocked) {
     return (
-      <main className="min-h-screen bg-gradient-to-br from-pink-200 via-rose-200 to-purple-200 flex items-center justify-center px-4 sm:px-6 py-8 sm:py-16 relative overflow-hidden">
+      <main className="min-h-screen bg-gradient-to-br from-pink-200 via-rose-200 to-purple-200 flex items-center justify-center px-4 sm:px-6 py-12 sm:py-16 relative overflow-x-hidden">
         <FloatingHearts />
 
         <div
@@ -183,7 +183,7 @@ export default function Home() {
 
   // MAIN PAGE
   return (
-    <main className="min-h-screen bg-gradient-to-br from-pink-200 via-rose-200 to-purple-200 flex items-center justify-center px-4 sm:px-6 py-8 sm:py-16 relative overflow-hidden">
+    <main className="min-h-screen bg-gradient-to-br from-pink-200 via-rose-200 to-purple-200 flex items-center justify-center px-4 sm:px-6 py-12 sm:py-16 relative overflow-x-hidden">
       <FloatingHearts />
 
       {showConfetti && <Confetti />}
